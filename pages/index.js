@@ -1,4 +1,3 @@
-// import styles from '../../styles/Home.modules.css';
 import Layout from '../components/layout';
 import Comic, { ComicList } from '../components/comic';
 import { fetch } from '../services/fetcher';
