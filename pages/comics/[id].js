@@ -1,5 +1,5 @@
 import Layout from '../../components/layout';
-import Comic from '../../components/Comic';
+import Comic from '../../components/comic';
 import { fetch } from '../../services/fetcher';
 
 export default function displayComic({ comic }) {

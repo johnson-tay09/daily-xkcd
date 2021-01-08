@@ -3,8 +3,8 @@ import Link from 'next/link';
 export default function Comic({ comic }) {
 	return (
 		<>
-			<h2>{comic && comic.title}</h2>
-			<img src={comic && comic.img} alt={comic && comic.alt} />
+			<h2>{comic.title}</h2>
+			<img src={comic.img} alt={comic.alt} />
 		</>
 	);
 }
@@ -28,7 +28,7 @@ export function ComicList({ mostRecentNum }) {
 function ComicLink({ num }) {
 	return (
 		<li>
-			<Link href="/comic/[id].js" as={`/comic/${num}`}>
+			<Link href="/comics/[id].js" as={`/comics/${num}`}>
 				<a>{num}</a>
 			</Link>
 		</li>
